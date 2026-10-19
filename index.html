@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nihad + Zehra</title>
+<title>NZ</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 <style>
 :root{color-scheme:dark;--bg1:#04050f;--bg2:#0a0b2a;--txt:#f3e8ff;box-sizing:border-box;
@@ -150,7 +150,7 @@ function init(){
  subTimer=null;clearTimeout(hintTimer);core.material.opacity=0;
  state='intro';m=mp=cm=ct=mt=he=bt=PH=0;spinMul=1;flash=0;dustA=1;rotY=rotX=velY=0;lastIdx=-1;grab=-1;dragging=false;
  buildDust();dust.visible=true;dustMat.uniforms.uA.value=1;hMat.uniforms.uEmerge.value=0;
- $('foot').style.opacity=0;setHint('Ekrana toxun');
+ $('foot').style.opacity=0;setHint('bas ekranaa!!!!!1');
 }
 function startMorph(){
  state='morph';setHint('');
@@ -185,7 +185,7 @@ function updateDust(){
 
 function update(dt){
  T+=dt;stars.material.uniforms.uT.value=T;
- if(state==='morph'){mp+=dt/3;m=Math.min(mp,1);if(mp>=1){state='drag';setHint('İkisini ortaya gətir, qovuşdur');}}
+ if(state==='morph'){mp+=dt/3;m=Math.min(mp,1);if(mp>=1){state='drag';setHint('birlesdirr!!!!');}}
  if(state==='drag'){m=1;
   cen.forEach((c,g)=>{if(g===grab){c.x+=(c.tx-c.x)*.25;c.y+=(c.ty-c.y)*.25;}});
   const d=Math.hypot(cen[0].x-cen[1].x,cen[0].y-cen[1].y);
